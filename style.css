@@ -3,6 +3,11 @@ body {
     text-align: center;
     font-family: candara light;
 }
+p{
+    color: black;
+    font-size: 20px;
+    font-family: "Lucida Handwriting";
+}
 
 header {
     background-color: #333;
@@ -39,16 +44,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.motivational-quotes {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-}
 
-/* Button Styling */
 button {
     background-color: #333;
     color: white;
@@ -62,13 +58,6 @@ button:hover {
     background-color: #555;
 }
 
-#quote {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-.fade-out {
-    opacity: 0;
-}
 
 footer {
     background-color: #333;

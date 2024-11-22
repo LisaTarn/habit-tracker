@@ -15,6 +15,12 @@ function updateQuote(index) {
     quoteElement.textContent = quotes[index];
 }
 
+function displayRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    currentIndex = randomIndex;
+    updateQuote(currentIndex);
+}
+
 document.getElementById("prevQuote").addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + quotes.length) % quotes.length;
     updateQuote(currentIndex);
@@ -24,10 +30,5 @@ document.getElementById("nextQuote").addEventListener("click", () => {
     updateQuote(currentIndex);
 });
 
-function displayRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    currentIndex = randomIndex; 
-    updateQuote(currentIndex);
-}
 
 displayRandomQuote();
