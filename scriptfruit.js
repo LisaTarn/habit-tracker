@@ -1,13 +1,10 @@
 function validateNumber(){
-    const form = document.getElementById ('habit-form');
-    const numbers = form.getElementByTagName('input');
-    for (let i=0; i<numbers.length; i++){
-        if (numbers[i].value === ""){
-                alert("Please enter a number"); 
-        }
-    }
-}
-
+  const numbers = document.getElementById('input').value;
+  if (isNaN(numbers)){
+              alert("Please enter a number"); 
+      }
+  };
+  
 const data = {
   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   datasets: [{
