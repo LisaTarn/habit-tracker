@@ -30,9 +30,17 @@ nav ul li a {
     color: rgb(183, 239, 189);
     text-decoration: none;
 }
+nav ul li a dashboard {
+    color: rgb(4, 46, 9);
+    text-decoration: none;
+}
 nav ul li a:hover{
     text-decoration: underline;
     font-weight: bolder;
+}
+
+#dashboard ul li a {
+    color: #0b300d;
 }
 
 section {
