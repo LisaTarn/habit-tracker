@@ -26,7 +26,7 @@
         
 <label for="sleep">Hours of Sleep:</label>
         <input type="number" id="sleep" name="sleep" onchange="updateChart(this)" min="0" max="24" required>
-        <button type="submit" id="submit" onsubmit="validateNumber()">Submit</button>
+        <button type="button" id="button" onclick="validateNumber()">Submit</button>
             <canvas id="myChartsleep"></canvas>
 
 
