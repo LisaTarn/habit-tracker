@@ -26,7 +26,32 @@
         <input type="number" id="water" name="water" onchange="updateChart(this)" min="0" max="20" required>
         <button type="button" id="button" onclick="validateNumber()">Submit</button>
             <canvas id="myChartwater"></canvas>
-
+            <style>
+                table{
+                margin-top: 10px;
+            }
+            table, tr, th, td{
+                padding:10px;
+                border: 1px solid #666;
+                width: 100%;
+                border-collapse: collapse;
+            }
+            </style>
+            <table>
+                <thead>
+                    <p>Click on bar to display data below:</p>
+                    <tr>
+                        <th>Day:</th>
+                        <th>Cups of Water:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
        
     </section>
     <br><br><br><br>

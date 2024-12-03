@@ -59,4 +59,18 @@ function updateChart(exercise){
   myChart.update();
 };
 
+function handleClick(click){
+  const points = myChart.getElementsAtEventForMode(click, 'nearest', {intersect:true}, true);
+  if(points[0]){
+    const dataset= points[0].datasetIndex;
+    const index = points[0].index;
+    const label= myChart.data.labels[index]
+    const value = myChart.data.datasets[dataset].data[index];
+    const tr = document.querySelectorAll('tbody tr')[0];
+    tr.children[0].innerText = label;
+    tr.children[1].innerText = value;
+  }
 
+
+}
+myChart.canvas.onclick=handleClick;
