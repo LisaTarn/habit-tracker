@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scriptsignup.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Daily Habit Tracker</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#dashboard">View and Upload your Progress</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br><br><br>
+
+<section class="form-section">
+  <div id="form-container">
+    <div id="login-form" style="display: block;">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="login-username">Username:</label><br>
+        <input type="text" id="login-username" name="username" required><br><br>
+        
+        <label for="login-password">Password:</label><br>
+        <input type="password" id="login-password" name="password" required><br><br>
+        
+        <button type="submit">Login</button>
+      </form>
+      <p>
+        Don't have an account? <a href="#" id="show-signup">Sign Up</a>
+      </p>
+    </div>
+
+    <div id="signup-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <label for="signup-username">Username:</label><br>
+        <input type="text" id="signup-username" name="username" required><br><br>
+        
+        <label for="signup-email">Email:</label><br>
+        <input type="email" id="signup-email" name="email" required><br><br>
+        
+        <label for="signup-password">Password:</label><br>
+        <input type="password" id="signup-password" name="password" required><br><br>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>
+        Already have an account? <a href="#" id="show-login">Login</a>
+      </p>
+    </div>
+  </div>
+  <button id="back-button" onclick="goBack()">Back to Homepage</button>
+
+  <footer>
+    <p>&copy; Group 4</p>
+</footer>
+</body>
+</html>
