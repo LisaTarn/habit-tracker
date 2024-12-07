@@ -32,3 +32,4 @@ document.getElementById("nextQuote").addEventListener("click", () => {
 
 
 displayRandomQuote();
+
