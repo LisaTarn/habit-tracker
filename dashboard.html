@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Habit Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptdashboard.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Daily Habit Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="signUp.html">Sign up or Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+    <style>
+        .chartBox{
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        
+        }
+    </style>
+  <section class="welcome">
+        <p>Please enter your exercise for today:</p>
+        <input type="number" placeholder="minutes of exercise" id="exercise" name="exercise" min="0" max="480" required>
+        
+        <input type="text" placeholder="Day of the week"  id="dayexercise" name="day" required>
+        
+        <button type="button" id="button" onclick="updateChartexercise()">Submit</button>
+      <div class = "chartBox">
+            <canvas id="myChartexercise"></canvas></div>
+            
+            
+<p>Please enter your cups of water for today:</p>
+<input type="number" placeholder="# Cups of water" id="water" name="water" min="0" max="20" required>
+        
+        <input type="text" placeholder="Day of the week"  id="daywater" name="day" required>
+        
+        <button type="button" id="button" onclick="updateChartwater()">Submit</button>
+      <div class ="chartBox">
+            <canvas id="myChartwater"></canvas></div>
+        
+
+<p>Please enter your hours of sleep for today:</p>
+<input type="number" placeholder="Hours of Sleep" id="sleep" name="sleep" min="0" max="20" required>
+        
+        <input type="text" placeholder="Day of the week"  id="daysleep" name="day" required>
+        
+        <button type="button" id="button" onclick="updateChartsleep()">Submit</button>
+      <div class ="chartBox">
+            <canvas id="myChartsleep"></canvas></div>
+            
+
+<p>Please enter your fruit and vegatble intake for today:</p>
+<input type="number" placeholder="Servings of Fruits and Vegetables" id="fruit" name="fruit" min="0" max="20" required>
+        
+        <input type="text" placeholder="Day of the week"  id="dayfruit" name="day" required>
+        
+        <button type="button" id="button" onclick="updateChartfruit()">Submit</button>
+      <div class ="chartBox">
+            <canvas id="myChartfruit"></canvas></div>
+            
+</section>
+    
+    <br><br><br><br>
+    <footer>
+        <p>&copy; Group 4</p>
+    </footer>
+        </body>
+        </html>
+            
