@@ -36,12 +36,6 @@ displayRandomQuote();
 //*Contact Form Validation
 const form = document.getElementById('contactUs');
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    console.log('Message submitted!', event); 
-});
-
-
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
@@ -53,7 +47,8 @@ const messageError = document.getElementById('messageError');
 const successMessage = document.getElementById('successMessage');
 
 form.addEventListener('submit', function(event) {
-    // Clear any previous error messages
+    event.preventDefault(); 
+
     nameError.textContent = '';
     emailError.textContent = '';
     messageError.textContent = '';
@@ -78,20 +73,15 @@ form.addEventListener('submit', function(event) {
         messageError.textContent = 'Please Enter your Message';
         isValid = false;
     }
-
-
     
     if (isValid) {
         successMessage.textContent = 'Message Sent Successfully! We Will try to reach you in 7-14 business days. ';
         alert('Your Message has been Sent ' );
         form.reset();
-    }
-
-    event.preventDefault(); 
+    } 
+    event.preventDefault();
 });
 
-
-// Function to validate email format
 function validateEmail(email) {
     const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     
