@@ -34,11 +34,11 @@ document.getElementById("nextQuote").addEventListener("click", () => {
 displayRandomQuote();
 
 //*Contact Form Validation
-const form = document.getElementById('registerForm');
+const form = document.getElementById('contactUs');
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting for now
-    console.log('Form submitted!', event); // Check if form submission is working
+    event.preventDefault(); 
+    console.log('Message submitted!', event); 
 });
 
 
@@ -80,13 +80,13 @@ form.addEventListener('submit', function(event) {
     }
 
 
-    // If all inputs are valid, show success message
+    
     if (isValid) {
         successMessage.textContent = 'Message Sent Successfully! We Will try to reach you in 7-14 business days. ';
         alert('Your Message has been Sent ' );
     }
 
-    event.preventDefault(); // Prevent form from actually submitting
+    event.preventDefault(); 
 });
 
 
