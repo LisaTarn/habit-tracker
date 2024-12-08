@@ -1,3 +1,4 @@
+//* Quotes Rotation 
 const quoteElement = document.getElementById("quote");
 const quotes = [
     "Consistency is the key to success.",
@@ -29,7 +30,6 @@ document.getElementById("nextQuote").addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % quotes.length;
     updateQuote(currentIndex);
 });
-
 
 displayRandomQuote();
 
