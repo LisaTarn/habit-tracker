@@ -14,12 +14,33 @@
         <nav>
             <ul>
                 <li><a href="signUp.html">Sign Up or Login</a></li>
-                <li><a href="#dashboard">View and Upload your Progress</a></li>
+                <li><a href="dashboard.html">View and Upload your Progress</a></li>
             </ul>
         </nav>
     </header>
     <br><br><br><br>
 
+    <section class = "about">
+        <h2>About Us</h2>
+        <p>Welcome to HabitTrack, your personal companion for building and maintaining healthy habits! Our mission is to empower you to take small, consistent steps toward a healthier, more balanced lifestyle. <br>
+
+        Whether you're aiming to drink more water, exercise regularly, eat healthier or, have a better sleep schedule. HabitTrack helps you stay on top of your goals with easy-to-use tracking tools and personalized reminders. Join a community of like-minded individuals and celebrate every milestone on your journey to self-improvement. <br>
+            
+        Start today—your best self is just a habit away!</p>
+
+        <table>
+            <tr>
+                <td><img src="food.jpg" alt="plate of fruits and vegetables"></td>
+                <td><img src="water.jpg" alt="water bottle"></td>
+            </tr>
+            <tr>
+                <td><img src="exercise.jpg" alt="gym"></td>
+                <td><img src="sleep.jpg" alt="teddy sleeping in bed"></td>
+            </tr>
+        </table>
+    </section>
+
+    <br><br><br><br>
     <section class="welcome">
         <h2>Get Inspired:</h2>
         <br>
@@ -29,19 +50,30 @@
         <br>
     </section>
     <br><br><br><br>
-
-    <section id="dashboard">
-    <h2>See and Upload your Progress:</h2>
-    <nav>
-        <ul>
-            <li><a href="Water.html"> Water Intake Dashboard</a></li>
-            <li><a href="Fruits.html">Fruits and Vegetables Servings Dashboard</a></li>
-            <li><a href="Exercise.html">Exercise Dashboard</a></li>
-            <li><a href="Sleep.html">Sleep Dashboard</a></li>
-        </ul>
-    </nav>
-    </section>
+    <section class = "contactUs">
+        <h2>Contact Us</h2>
+    <form id="contactUs">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span> <!-- For displaying error messages -->
+        <br><br>
     
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <span class="error" id="messageError"></span>
+        <br><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+    <p id="successMessage" class="success"></p> 
+    </section>
+ 
     <br><br><br><br><br>
     <footer>
         <p>&copy; Group 4</p>
