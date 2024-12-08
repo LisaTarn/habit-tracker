@@ -1,12 +1,10 @@
 function validateNumber(){
-    const form = document.getElementById ('habit-form');
-    const numbers = form.getElementByTagName('input');
-    for (let i=0; i<numbers.length; i++){
-        if (numbers[i].value === ""){
-                alert("Please enter a number"); 
-        }
-    }
-}
+  const numbers = document.getElementById('input').value;
+  if (isNaN(numbers)){
+              alert("Please enter a number"); 
+      }
+  };
+
 
 const data = {
   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -61,4 +59,18 @@ function updateChart(exercise){
   myChart.update();
 };
 
+function handleClick(click){
+  const points = myChart.getElementsAtEventForMode(click, 'nearest', {intersect:true}, true);
+  if(points[0]){
+    const dataset= points[0].datasetIndex;
+    const index = points[0].index;
+    const label= myChart.data.labels[index]
+    const value = myChart.data.datasets[dataset].data[index];
+    const tr = document.querySelectorAll('tbody tr')[0];
+    tr.children[0].innerText = label;
+    tr.children[1].innerText = value;
+  }
 
+
+}
+myChart.canvas.onclick=handleClick;
