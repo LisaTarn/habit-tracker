@@ -84,6 +84,7 @@ form.addEventListener('submit', function(event) {
     if (isValid) {
         successMessage.textContent = 'Message Sent Successfully! We Will try to reach you in 7-14 business days. ';
         alert('Your Message has been Sent ' );
+        form.reset();
     }
 
     event.preventDefault(); 
