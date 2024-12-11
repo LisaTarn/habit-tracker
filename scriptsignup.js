@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (user) {
             alert(`Login successful! Welcome, ${username}`);
-            window.location.href = 'index.html'; 
+            window.location.href = 'dashboard.html'; 
         } else {
             alert('Invalid username or password.');
         }
